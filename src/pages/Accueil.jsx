@@ -1,8 +1,9 @@
 import React from 'react'
 import Hero from '../composants/Hero'
-import Competences from '../composants/Competences'
+import Competences from '../composants/competences'
+Competences
 
-const Home = () => {
+const Accueil = () => {
   return (
     <div>
       <Hero />
@@ -11,4 +12,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Accueil

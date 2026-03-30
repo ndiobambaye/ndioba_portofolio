@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './pages/Layout'
-import Accueil from "./pages/Home";
-import Contacts from "./pages/contact";
-import Projets from './pages/projets'
+import Accueil from './pages/Accueil'
+import Contact from './pages/Contact'
+import Projets from './pages/Projets'
 import Detail from './pages/Detail'
 
 
@@ -15,12 +15,12 @@ function App() {
     { element : <Layout/> ,
       children: [
             { path:"/" , element: <Accueil/> },
-            { path:"/contact" , element: <Contacts/> },
+            { path: "/contact", element: <Contact /> },
             { path:"/projets" , element: <Projets/> },
             { path:"/projet/:id" , element: <Detail/> },
       ]
     },
-  
+   
    
 
    ])
