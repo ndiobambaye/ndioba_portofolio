@@ -3,7 +3,6 @@ import Layout from './pages/Layout'
 import Accueil from "./pages/Home";
 import Contacts from "./pages/contact";
 import Projets from './pages/projets'
-import NotFound from './pages/NotFound'
 import Detail from './pages/Detail'
 
 
@@ -21,7 +20,7 @@ function App() {
             { path:"/projet/:id" , element: <Detail/> },
       ]
     },
-    { path:"*" , element: <NotFound/> },
+  
    
 
    ])

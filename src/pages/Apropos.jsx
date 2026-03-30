@@ -9,7 +9,7 @@ function Apropos() {
         <h1>À propos de moi</h1>
 
         <p className="intro">
-          Bonjour ! Je m'appelle <strong>Nogaye Yacine</strong>, développeuse
+          Bonjour ! Je m'appelle <strong>Ndioba Mbaye</strong>, développeuse
           débutante en <span>HTML, CSS</span> et <span>JavaScript</span>.  
           Je suis passionnée par la création de sites web modernes,
           simples et efficaces.
