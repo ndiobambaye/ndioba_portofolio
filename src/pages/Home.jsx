@@ -1,0 +1,14 @@
+import React from 'react'
+import Hero from '../composants/Hero'
+import Competences from '../composants/Competences'
+
+const Home = () => {
+  return (
+    <div>
+      <Hero />
+      <Competences />
+    </div>
+  )
+}
+
+export default Home
