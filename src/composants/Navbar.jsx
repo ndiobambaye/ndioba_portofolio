@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav> 
         {/* gauche */}
-        <h1 className='logo'>logo</h1>
+     <div className="logo"><span>{"</>"}</span> Ndioba.dev</div>
 
         {/* au milieu */}
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import profil from '../assets/images/profil.jpg'
+import profil from '../assets/images/IMG_2064.JPG'
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Hero = () => {
