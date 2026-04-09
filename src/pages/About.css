@@ -1,0 +1,67 @@
+.about_page {
+  min-height: 100vh;
+  padding: 100px 20px 60px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about_titre {
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #a78bfa, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  animation: fadeSlideUp 0.7s ease forwards;
+}
+
+.about_desc {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.7);
+  animation: fadeSlideUp 0.9s ease forwards;
+}
+
+.about_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.about_card {
+  background: rgba(167, 139, 250, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease forwards;
+}
+
+.about_card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(167, 139, 250, 0.25);
+  border-color: rgba(167, 139, 250, 0.6);
+  background: rgba(167, 139, 250, 0.18);
+}
+
+.about_card_titre {
+  font-size: 1rem;
+  color: #a78bfa;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

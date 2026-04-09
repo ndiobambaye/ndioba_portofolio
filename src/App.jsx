@@ -4,6 +4,8 @@ import Accueil from './pages/Accueil'
 import Contact from './pages/Contact'
 import Projets from './pages/Projets'
 import Detail from './pages/Detail'
+import About from "./pages/About";
+
 
 
 
@@ -18,6 +20,7 @@ function App() {
             { path: "/contact", element: <Contact /> },
             { path:"/projets" , element: <Projets/> },
             { path:"/projet/:id" , element: <Detail/> },
+            { path:"/about" , element:<About />} ,
       ]
     },
    
