@@ -6,76 +6,38 @@ const projets_bd = [
     id: 1,
     nom: "Portfolio Personnel",
     image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&h=500&fit=crop",
-    techno: ["React", "CSS"],
-    description: "Mon portfolio développé avec React. Un site moderne qui présente mes compétences et mes projets de développement Front-End.",
-    github: "https://github.com",
-    demo: "https://demo.com"
+    techno: ["React", "CSS", "React Router DOM", "React Icons"],
+    description: "Mon portfolio personnel développé avec React JS. Un site moderne qui présente mes compétences, mes projets de développement Front-End et un formulaire de contact.",
+    github: "https://github.com/ndiobambaye/ndioba-portofolio",
+    demo: "https://ndioba-portofolio.vercel.app"
   },
   {
     id: 2,
-    nom: "Site E-commerce",
+    nom: "MarchéLocal",
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop",
-    techno: ["HTML", "CSS", "JavaScript"],
-    description: "Site de vente en ligne avec panier d'achat, gestion des produits et système de paiement intégré.",
+    techno: ["React", "CSS"],
+    description: "Plateforme web d'annonces locales permettant de publier et rechercher des annonces par catégories : Électronique, Habillement, Immobilier, Services, Véhicules, Alimentation, Meubles.",
     github: "https://github.com",
     demo: "https://demo.com"
   },
   {
     id: 3,
-    nom: "Application Laravel",
+    nom: "RED PRODUCT",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop",
-    techno: ["Laravel", "PHP", "CSS"],
-    description: "Application web complète avec authentification, gestion des utilisateurs et base de données MySQL.",
+    techno: ["Laravel", "PHP", "HTML5", "CSS3"],
+    description: "Application web de gestion hôtelière complète avec tableau de bord administrateur. Gestion centralisée des hôtels, utilisateurs, réservations, formulaires et messagerie interne avec statistiques en temps réel.",
     github: "https://github.com",
     demo: "https://demo.com"
   },
   {
     id: 4,
-    nom: "Dashboard Admin",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
-    techno: ["React", "JavaScript"],
-    description: "Tableau de bord administrateur avec graphiques, statistiques et gestion des données en temps réel.",
+    nom: "Boutique en ligne",
+    image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=500&fit=crop",
+    techno: ["React", "CSS"],
+    description: "Boutique en ligne de produits alimentaires avec une interface moderne. Page d'accueil en plein écran, grille de produits avec photos et prix (Lait, Café, Boissons, Viande, Miel) et footer complet.",
     github: "https://github.com",
     demo: "https://demo.com"
   },
-  "https://images.unsplash.com/photo-1704717700477-69f9509f9af2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGltYWdlJTIwaW5mb3JtYXRpcXVlfGVufDB8fDB8fHww",
-  {
-    id: 6,
-    nom: "Dashboard Admin",
-    image: "https://images.unsplash.com/photo-1704717700477-69f9509f9af2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGltYWdlJTIwaW5mb3JtYXRpcXVlfGVufDB8fDB8fHww",
-    techno: ["React", "JavaScript"],
-    description: "Tableau de bord administrateur avec graphiques, statistiques et gestion des données en temps réel.",
-    github: "https://github.com",
-    demo: "https://demo.com"
-  },
-  {
-    id: 5,
-    nom: "Dashboard Admin",
-    image: "https://images.unsplash.com/photo-1557441327-782eea23facd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW1hZ2UlMjBkZXZlbG9wcGV1ciUyMHVuc3BsYXNofGVufDB8fDB8fHww",
-    techno: ["React", "JavaScript"],
-    description: "Tableau de bord administrateur avec graphiques, statistiques et gestion des données en temps réel.",
-    github: "https://github.com",
-    demo: "https://demo.com"
-  },
-{
-    id: 6,
-    nom: "Dashboard Admin",
-    image: "https://images.unsplash.com/photo-1704717700477-69f9509f9af2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGltYWdlJTIwaW5mb3JtYXRpcXVlfGVufDB8fDB8fHww",
-    techno: ["React", "JavaScript"],
-    description: "Tableau de bord administrateur avec graphiques, statistiques et gestion des données en temps réel.",
-    github: "https://github.com",
-    demo: "https://demo.com"
-  },
-  { 
-    id: 5,
-    nom: "Dashboard Admin",
-    image: "https://images.unsplash.com/photo-1704717700477-69f9509f9af2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGltYWdlJTIwaW5mb3JtYXRpcXVlfGVufDB8fDB8fHww",
-    techno: ["React", "JavaScript"],
-    description: "Tableau de bord administrateur avec graphiques, statistiques et gestion des données en temps réel.",
-    github: "https://github.com",
-    demo: "https://demo.com"
-  },
-
 ]
 
 const Detail = () => {
@@ -85,8 +47,8 @@ const Detail = () => {
   if (!projet) {
     return (
       <div className='detail' style={{ textAlign: "center" }}>
-        <h2>Projet introuvable</h2>
-        <NavLink to="/projets" style={{ color: "#3b82f6" }}>← Retour aux projets</NavLink>
+        <h2 style={{ color: "white" }}>Projet introuvable</h2>
+        <NavLink to="/projets" style={{ color: "#a78bfa" }}>← Retour aux projets</NavLink>
       </div>
     )
   }
@@ -121,7 +83,7 @@ const Detail = () => {
           </div>
 
           <div style={{ marginTop: "30px" }}>
-            <NavLink to="/projets" style={{ color: "#3b82f6", fontSize: "15px" }}>
+            <NavLink to="/projets" style={{ color: "#a78bfa", fontSize: "15px" }}>
               ← Retour aux projets
             </NavLink>
           </div>
